@@ -1,0 +1,8 @@
+1 Estrutura do código.
+ - A página assets é onde ficam os estilos, imagens, fontes e scripts;
+ - O favicon deve ficar no root;
+ - Não importe os códigos como fontawesome e Jquery directo da CDN.
+ - Use Bootstrap Icons ao invês do fontawesome, 
+ - O link para icones do boostrap é: https://icons.getbootstrap.com/ apenas copie o código SVG e cole onde quer que o ícone esteje.
+ - Colocar o atributo title para os links;
+ - O Jquery.ui serve para animações
