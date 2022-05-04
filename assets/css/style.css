@@ -45,6 +45,7 @@ header p{
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+
 .logoDiv {
     width: 200px;
     height: 100%;
@@ -58,10 +59,36 @@ header p{
 .logoDiv img{
     width: 100%;
 }
+
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+  position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+    
+}
+
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+
 .navigation-menu{
     float: right;
     display: flex;
-    align-items: center;
+   align-items: center;
+   
+
 }
 .navigation-menu a{
     color: #333;
@@ -156,6 +183,7 @@ a.begginBt:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .bannerText *{
     margin: 0;
@@ -182,10 +210,9 @@ main img{
 main h1{
     margin: 15px 15px;
     font-family: Poppins;
-    font-weight: bold;
     text-align: center;
     /*padding: 25px 0px;*/
-    padding-bottom: 50px;
+    font-size: 38px;
 }
 
 main h2{
@@ -193,6 +220,12 @@ main h2{
     font-weight: bold;
     color: #444;
     margin: 15px 15px;
+    text-align: center;
+}
+
+
+#psobre{
+    text-align: center;
 }
 
  main p{
@@ -206,15 +239,118 @@ main h2{
 #p1{
     margin: 0px;
 }
-
+ 
 .contentSection {
     max-width: 1100px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: space-between;
 }
 
-@media screen and (max-width:1100px){
-    .pricing-card{
-        flex: 50%;
+
+.Benefits{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.beneficits-title{
+    color: #444;
+}
+
+.Benefit{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 8px #7070704f;
+    padding: 30px 0px;
+    margin: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.Benefit svg {
+    fill: #83ACF2;
+}
+
+.icon{
+    font-size: 40px;
+    transition: .3s linear;
+}
+
+.Benefit p{
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Benefit:hover{
+    background-color: #48dbfb;
+    background: linear-gradient(to right, #71cadf, #83ACF2);
+}
+
+.Benefit:hover svg {
+    fill: #fff;
+}
+
+.Benefit:hover .icon{
+    color: #fff;
+}
+
+.Benefit h2{
+    font-size: 23px;
+}
+
+.Benefit:hover:hover h2{
+    text-shadow: 1px 1px 5px #333333;
+    color: #fff;
+}
+
+.Benefit:hover:hover p{
+    color: #fff;
+    text-shadow: 1px 1px 5px #333333;
+}
+.rowImg {
+    width: 100%;
+    max-width: 400px;
+}
+.rowText {
+    width: 100%;
+    max-width: 400px;
+}
+.rowDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.aboutBack {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 100px 10px 100px;
+    transform: rotate(2deg);
+}
+@media screen and (min-width: 782px){
+    .rowDiv {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .rowImg {
+        max-width: 400px;
+    }
+    .rowText {
+        max-width: 100%;
+        padding: 10px 30px;
     }
 }
 
